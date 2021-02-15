@@ -61,7 +61,7 @@ void loop() {
         int httpCode = http.GET();
         if(httpCode > 0) {
             if(httpCode == HTTP_CODE_OK) {
-                String payload = http.getString();       // save as string 'payload'
+                String payload = http.getString();
                 const size_t bufferSize = JSON_OBJECT_SIZE(10) + 250;
                 DynamicJsonBuffer jsonBuffer(bufferSize);
                 JsonObject& root = jsonBuffer.parseObject(payload);
