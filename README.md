@@ -11,8 +11,8 @@ I looked for a suitable solution for myself on the Internet, but unfortunately I
 a 3 year old project which found on Github (https://github.com/arejaycodes/piholenextion) and built it from scratch new and
 rebuild this from 3,5 inch to 7 inch, while his files doesn't work for an 7 inch display.
 
-Few hours later the first prebuild of my personal version was ready for the first start:
-![Alt text](project_pictures/nextion_NX8048T070_7_inch_first_test.png?raw=true "Pihole Nestion WiFi Display prebuild")
+... and the first start and finishing the planed project.
+![Alt text](project_pictures/nextion_NX8048T070_7_inch_in_action.png?raw=true "Pihole Nestion WiFi Display cin action")
 
 As next step i fixed the NodeMCU V3 with glow behind the display:
 ![Alt text](/project_pictures/nextion_NX8048T070_7_inch_build_rearside.png?raw=true "Pihole Nestion WiFi Display build rearside")
@@ -25,9 +25,6 @@ Build in the Nextion display in the case ...
 ![Alt text](project_pictures/nextion_NX8048T070_7_inch_build_in.png?raw=true "Pihole Nestion WiFi Display built in")
 
 ![Alt text](project_pictures/nextion_NX8048T070_7_inch_build_in_complete.png?raw=true "Pihole Nestion WiFi Display build in complete")
-
-... and the first start and finishing the planed project.
-![Alt text](project_pictures/nextion_NX8048T070_7_inch_in_action.png?raw=true "Pihole Nestion WiFi Display cin action")
 
 NOTICE: Please read the instructions in the Arduino project file before you run this project!
 
