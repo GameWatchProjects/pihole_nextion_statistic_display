@@ -18,7 +18,8 @@ At first i fixed the NodeMCU V3 with glow behind the display:
 ![Alt text](/project_pictures/nextion_NX8048T070_7_inch_build_rearside.png?raw=true "Pihole Nestion WiFi Display build rearside")
 
 A friend from me builds the case with his nice professional 3D Printer setup for me. The STL files can be find in this
-repository to, when every one this needed.
+repository to,
+when every one this needed.
 ![Alt text](project_pictures/nextion_NX8048T070_7_inch_case.png?raw=true "Pihole Nestion WiFi Display case")
 
 Build in the Nextion display in the case ...
