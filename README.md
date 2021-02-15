@@ -11,7 +11,7 @@ I looked for a suitable solution for myself on the Internet, but unfortunately I
 a 3 year old project which found on Github (https://github.com/arejaycodes/piholenextion) and built it from scratch new and
 rebuild this from 3,5 inch to 7 inch, while his files doesn't work for an 7 inch display.
 
-... and the first start and finishing the planed project.
+The first start and finish the planed project.
 ![Alt text](project_pictures/nextion_NX8048T070_7_inch_in_action.png?raw=true "Pihole Nestion WiFi Display cin action")
 
 As next step i fixed the NodeMCU V3 with glow behind the display:
