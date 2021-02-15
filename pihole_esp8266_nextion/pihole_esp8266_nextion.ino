@@ -45,7 +45,6 @@ NTPClient timeClient(ntpUDP, host, utcOffsetInSeconds);
 
 
 void setup() {
-    // Deault Baudrate by the Nextion displays is 9600, but i change temporary the default baud rate to 115200 by using the given nextion image 
     Serial.begin(9600);
     delay(1000);
     Start_WiFi(ssid,password);
