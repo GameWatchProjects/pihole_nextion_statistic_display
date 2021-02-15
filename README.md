@@ -31,9 +31,11 @@ Build in the Nextion display in the case ...
 
 NOTICE: Please read the instructions in the Arduino project file before you run this project!
 
-Copy the Nextion Display TFT File on a blank micro sd-card and plce them in the micro sd cardholder o the nextion display.
-Power on the display and you can see the update routine. If the update ready, switch of the display and remove the micro
+Copy the Nextion Display TFT File on a blank micro sd-card and palce them in the micro sd cardholder on the nextion display.
+Power on the display and you can see the update routine. If the update ready, switch off the display and remove the micro
 sd card from the cardholder.
 
-As next step load the .ino file your Arduino editor, make the needed wifi and pihole/ntp (pihole and ntp must run on the same
+As next step load the .ino file in your Arduino editor, make the needed wifi and pihole/ntp (pihole and ntp must run on the same
 maschine) changes and install the needed libarys, compile and upload it to your esp8266 nodemcu v3. 
+
+Future request's are welcome ...
