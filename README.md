@@ -14,7 +14,8 @@ rebuild this from 3,5 inch to 7 inch, while his files doesn't work for an 7 inch
 The first start and finish the planed project.
 ![Alt text](project_pictures/nextion_NX8048T070_7_inch_in_action_update.png?raw=true "Pihole Nestion WiFi Display cin action")
 
-At first i fixed the NodeMCU V3 with glow behind the display:
+At first i fixed the NodeMCU V3 with glow behind the display. You can add an 470 μf / 35V capacitor (you have enought space
+behind the display, when you use my STL Files) between the GND and 5V Nextion display connextor for more security by startup.
 ![Alt text](/project_pictures/nextion_NX8048T070_7_inch_build_rearside.png?raw=true "Pihole Nestion WiFi Display build rearside")
 
 A friend from me builds the case with his nice professional 3D Printer setup for me. The STL files can be find in this
