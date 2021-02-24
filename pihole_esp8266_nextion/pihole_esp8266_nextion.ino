@@ -2,16 +2,19 @@
  *  ESP8266 NodeMCU 3 & Nextion NX8048T070 Display 7 inch 
  *  Requirements: - Raspberry Pi Zero/A+/2 B/3 B/3 B+/4 B with a running Pihole >= 5 and NTP Service installation
  *                - Nextion NX8048T070 display with a mico sd card for updating the display firmware
- *                - NodeMCU V3 with 4 wires (can be soldered direct with the Nextion NX8048T070 display connector)
+ *                - ESP8266 NodeMCU V3 or ESP8266 Wemos D1 mini with 4 wires (can be soldered direct with the Nextion NX8048T070 display connector)
  *                
  *                                    G     ->    GND
  *                  NodeMCU           TX    ->    RX      Nextion Display
  *                  Connector         RX    ->    TX      Connector
  *                                    VU    ->    5V
+ *   
+ *                  You can add an 470 μf / 35V capacitor (you have enought space behind the display, when you use my STL Files) between the 
+ *                  GND and 5V Nextion display connector for additionally security.
  *                                    
  *                - Micro-USB 5V DC power adapter
  *                
- *                - Q: Why owen NTP Service, when yur ISP or Router have this service?
+ *                - Q: Why owen NTP Service, when your ISP or Router have this service?
  *                  A: Your Router and/or your ISP will block you after few minutes, when you ask to often the time to synchronize your network time,
  *                     so we use our owen lokal timeserver and we can see on the display by the time, when was the last refresh successfully.
  *                     In most cases we didn't need realtime statistics, so the default refresh time of 10 seconds is enought.
