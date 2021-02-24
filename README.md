@@ -34,6 +34,7 @@ Power on the display and you can see the update routine. If the update ready, sw
 sd card from the cardholder.
 
 As next step load the .ino file in your Arduino editor, make the needed wifi and pihole/ntp (pihole and ntp must run on the same
-maschine) changes and install the needed libarys, compile and upload it to your esp8266 nodemcu v3. 
+maschine) changes and install the needed libarys, compile and upload it to your esp8266 nodemcu v3. You can also use an esp8266
+Wemos D1 mini (this is smaller and takes up less space) instead of a esp8266 nodemcu v3. The connections to the display are the same.
 
 Future request's are welcome ...
