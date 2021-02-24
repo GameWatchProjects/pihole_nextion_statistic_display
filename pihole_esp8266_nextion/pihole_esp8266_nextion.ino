@@ -1,6 +1,6 @@
 /**
  *  ESP8266 NodeMCU 3 & Nextion NX8048T070 Display 7 inch 
- *  Requirements: - Raspberry Pi Zero/A+/2 B/3 B/3 B+/4 B with a running Pihole >= 5 and NTP Serice installation
+ *  Requirements: - Raspberry Pi Zero/A+/2 B/3 B/3 B+/4 B with a running Pihole >= 5 and NTP Service installation
  *                - Nextion NX8048T070 display with a mico sd card for updating the display firmware
  *                - NodeMCU V3 with 4 wires (can be soldered direct with the Nextion NX8048T070 display connector)
  *                
