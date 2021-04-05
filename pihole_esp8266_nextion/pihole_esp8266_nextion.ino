@@ -23,18 +23,22 @@
 #include <Arduino.h>
 #include <NTPClient.h>
 #include <ArduinoJson.h>
+#include <ArduinoOTA.h>
 #include <ESP8266WiFi.h>
 #include <ESP8266WiFiMulti.h>
 #include <ESP8266HTTPClient.h>
 #include <WiFiUdp.h>
 #define USE_SERIAL Serial
 
+#define ESPHostname "pihole-display" // Wi-Fi & OTA Hostname
+
 WiFiClient client; // create wifi client object
 
 const char * host = "192.168.XXX.XXX"; // Pi-Hole IP - NOTICE: Make sure, the Pi-Hole and NTP service installation is on the same maschine
 const char * ssid = "YOUR-WIFI-SSID"; // Wi-Fi SSID Name
 const char * password = "YOUR-WIFI-PASS"; // Wi-Fi Password
-const char * wifihost = "pihole-display"; // Wi-Fi Hostname
+const char * otapassword = "YOUR-OTA-PASS"; // OTA Password for future updates over OTA
+
 
 // You need to adjust the UTC offset for your timezone in milliseconds
 //    For UTC -5.00 : -5 * 60 * 60 = -18000
@@ -52,6 +56,9 @@ void setup() {
   Serial.begin(115200);
   delay(1000);
   Start_WiFi(ssid, password);
+  ArduinoOTA.setHostname(ESPHostname);
+  ArduinoOTA.setPassword(otapassword);
+  ArduinoOTA.begin();
   timeClient.begin();
 }
 
@@ -141,7 +148,7 @@ int Start_WiFi(const char * ssid,
   int connAttempts = 0;
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) {
-    WiFi.hostname(wifihost);
+    WiFi.hostname(ESPHostname);
     delay(500);
     if (connAttempts > 20) return -5;
     connAttempts++;
