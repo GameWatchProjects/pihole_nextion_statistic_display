@@ -56,6 +56,7 @@ void setup() {
   Serial.begin(115200);
   delay(1000);
   Start_WiFi(ssid, password);
+  ArduinoOTA.setPort(8266);
   ArduinoOTA.setHostname(ESPHostname);
   ArduinoOTA.setPassword(otapassword);
   ArduinoOTA.begin();
@@ -63,7 +64,7 @@ void setup() {
 }
 
 void loop() {
-
+  ArduinoOTA.handle();
   if ((WiFi.status() == WL_CONNECTED)) {
     timeClient.update();
     HTTPClient http;
